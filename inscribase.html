@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+   
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+
+<body style="background-color: antiquewhite;">
+
+      <!-- Menú -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <div class="container-fluid text-black fw-bold px18 col-md-11">
+      <a class="navbar-brand" href="#">Techonogy Data</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="inscribase.html">Inscribase</a></li>
+          <li class="nav-item d-flex align-items-center">
+                <span class="text-black fw-bold px0"> Soluciones creativas en tecnologia</span>
+
+        </ul>   
+      </div>
+    </div>
+  </nav>
+  
+  
+  <div class="container my-5">
+        
+    <div class="row mb-5">
+        <div class="col-lg-8 offset-lg-2 text-">
+
+        <!-- Nombre -->
+         <form class=" needs-validation" novalidate>
+        <div class="mb-3">
+          <label for="nombreCompleto" class="form-label"> Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Erwin Joya" required min="3" maxlength="60">
+          <div class="invalid-feedback">Por favor ingresa tu nombre completo.</div>
+        </div>
+
+        <!-- Correo -->
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com" required minlength="6">
+          <div class="invalid-feedback">Por favor ingresa tu correo completo.</div>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" placeholder="••••••••" required minlength="6">
+          <div class="invalid-feedback">Por favor ingresa tu contraseña .</div>
+        </div>
+
+        <!-- Edad -->
+        <div class="mb-3">
+          <label for="edad" class="form-label">Edad</label>
+          <input type="number" class="form-control" id="edad" min="0" required max="90">
+          <div class="invalid-feedback">Por favor ingresa tu edad.</div>
+        </div>
+
+        <!-- Fecha de nacimiento -->
+        <div class="mb-3">
+          <label for="fecha" class="form-label">Fecha de nacimiento</label>
+          <input type="date" class="form-control"required id="fecha">
+          <div class="invalid-feedback">Por favor ingresa tu fecha de nacimiento.</div>
+        </div>
+
+        <!-- Hora de cita -->
+        <div class="mb-3">
+          <label for="hora" class="form-label">Hora de cita</label>
+          <input type="time" class="form-control"required id="hora">
+          <div class="invalid-feedback">Por favor ingresa la hora .</div>
+        </div>
+
+        <!-- Color favorito -->
+        <div class="mb-3">
+          <label for="color" class="form-label">Color favorito</label>
+          <input type="color" class="form-control form-control-color" required id="color" value="#563d7c">
+          <div class="invalid-feedback">Por favor escoge tu color favorito .</div>
+        </div>
+
+        <!-- Subir archivo -->
+        <div class="mb-3">
+          <label for="archivo" class="form-label">Subir archivo</label>
+          <input class="form-control" type="file" required id="archivo">
+          <div class="invalid-feedback">Por favor agrega un archivo .</div>
+        </div>
+
+        <!-- País -->
+        <div class="mb-3">
+          <label for="pais" class="form-label">País</label>
+          <select class="form-select" id="pais">
+            <option selected>Selecciona tu país</option>
+            <option value="mx">México</option>
+            <option value="ar">Argentina</option>
+            <option value="cl">Chile</option>
+            <option value="co">Colombia</option>
+            <option value="es">España</option>
+          </select>
+          <div class="invalid-feedback">Por favor escoge un país .</div>
+        </div>
+
+        <!-- Comentarios -->
+        <div class="mb-3">
+          <label for="comentarios" class="form-label">Comentarios</label>
+          <textarea class="form-control"  required id="comentarios" rows="3" placeholder="Escribe algo..."></textarea>
+          <div class="invalid-feedback">Por favor ingresa tu comentario .</div> 
+        </div>
+
+        <!-- Género -->
+        <div class="mb-3">
+          <label class="form-label d-block">Género</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="masculino" value="masculino">
+            <label class="form-check-label" for="masculino">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="femenino" value="femenino">
+            <label class="form-check-label" for="femenino">Femenino</label>
+          </div>
+          <div class="invalid-feedback">Por favor ingresa un género .</div>
+        </div>
+
+        <!-- Intereses -->
+        <div class="mb-3">
+          <label class="form-label d-block">Intereses</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="musica" value="musica">
+            <label class="form-check-label" for="musica">Música</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="deporte" value="deporte">
+            <label class="form-check-label" for="deporte">Deporte</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="lectura" value="lectura">
+            <label class="form-check-label" for="lectura">Lectura</label>
+          </div>
+          <div class="invalid-feedback">Por favor ingresa tu Interes .</div>
+        </div>
+
+        <!-- Nivel de satisfacción -->
+        <div class="mb-3">
+          <label for="satisfaccion" class="form-label">Nivel de satisfacción</label>
+          <input type="range" class="form-range" min="0" max="10" id="satisfaccion">
+        </div>
+
+        <!-- Checkbox de novedades -->
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="novedades">
+          <label class="form-check-label" for="novedades">Deseo recibir novedades</label>
+        </div>
+
+        <!-- Botón -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-4">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</form >
+
+<footer class="bg-primary text-white pt-3 pb-3">
+    <div class="container-fluid">
+        
+        <div class="row justify-content-center"> 
+            <div class="col-12 col-xl-10">
+                <div class="row mb-4 align-items-center fw-bold"> 
+                    
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-start">
+                        <ul class="list-unstyled d-flex mb-0">
+                            <li class="me-4"><a href="#" class="text-white text-decoration-none">Política</a></li>
+                            <li class="me-4"><a href="#" class="text-white text-decoration-none">Términos</a></li>
+                            <li class="me-4"><a href="contactos.html" class="text-white text-decoration-none">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end fs-5">
+                        <a href="https://www.instagram.com/" class="text-white mx-2" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.threads.com/" class="text-white mx-2" aria-label="Threads"><i class="bi bi-threads"></i></a>
+                        <a href="https://www.tiktok.com/" class="text-white mx-2" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+             <div class="col-12 col-xl-10">
+                 <hr class="text-white-50"> 
+             </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10 text-center pt-2">
+                <p class="mb-0 fw-bold">©2025 Techonogy Data. Todos los derechos reservados.</p>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+ 
+ 
+ 
+<script src="img/Etiquetas-y-Pegatinas-de-Producto.png" integrity=" " crossorigin="anonymous"></script>
+
+
+
+</body>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+</html>
